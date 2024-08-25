@@ -79,7 +79,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      // outDir: '',
+      outDir: `./dist${VITE_BASE_URL}`,
       rollupOptions: {
         output: {
           chunkFileNames: 'js/[name]-[hash].js', // 引入文件名的名称
