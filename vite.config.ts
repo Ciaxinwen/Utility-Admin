@@ -87,8 +87,8 @@ export default defineConfig(({ mode }) => {
           assetFileNames: '[ext]/[name]-[hash].[ext]', // 资源文件像 字体，图片等
           manualChunks(id) {
             if (id.includes('node_modules')) {
-              // 让每个插件都打包成独立的文件
-              return id.toString().split('node_modules/')[1].split('/')[0].toString();
+              //使用pnpm打包
+              return id.toString().split('node_modules/')[2].split('/')[0].toString();
             }
           },
         },
