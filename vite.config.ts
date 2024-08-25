@@ -81,9 +81,9 @@ export default defineConfig(({ mode }) => {
     build: {
       rollupOptions: {
         output: {
-          chunkFileNames: 'js/[name]-[hash].js', // 引入文件名的名称
-          entryFileNames: 'js/[name]-[hash].js', // 包的入口文件名称
-          assetFileNames: '[ext]/[name]-[hash].[ext]', // 资源文件像 字体，图片等
+          chunkFileNames: 'assets/js/[name]-[hash].js', // 引入文件名的名称
+          entryFileNames: 'assets/js/[name]-[hash].js', // 包的入口文件名称
+          assetFileNames: 'assets/[ext]/[name]-[hash].[ext]', // 资源文件像 字体，图片等
           manualChunks(id) {
             if (id.includes('node_modules')) {
               //使用pnpm打包
