@@ -8,7 +8,8 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "stylelint": "stylelint \"src/**/*.(vue|scss|css)\" --fix",
-    "eslint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
+    "eslint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "push gitPages": "git subtree push --prefix=dist origin gh-pages"
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
