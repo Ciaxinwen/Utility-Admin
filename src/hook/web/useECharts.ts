@@ -7,7 +7,7 @@ import { useEventListener } from '@vueuse/core';
 
 export const useECharts = (
   el: HTMLDivElement | Ref<HTMLDivElement>,
-  theme: 'light' | 'dark' | 'default' = 'default',
+  theme: 'light' | 'dark' | 'auto' = 'auto',
 ) => {
   let chartInstance: echarts.ECharts | null = null;
   const cacheOptions = ref({}) as Ref<EChartsOption>;
@@ -17,7 +17,7 @@ export const useECharts = (
   const { getThemeMode: getSysThemeMode, config } = storeToRefs(configStore);
 
   const getThemeMode = computed(() => {
-    return theme === 'default' ? getSysThemeMode.value : theme;
+    return theme === 'auto' ? getSysThemeMode.value : theme;
   });
   const getOptions = computed(() => {
     return {

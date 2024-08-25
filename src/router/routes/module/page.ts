@@ -106,7 +106,7 @@ export const PageRoutes: RouteRecordRaw = {
         {
           path: 'center',
           name: 'page-personal-center',
-          component: () => import('@/view/page/personal/personalCenter/index.vue'),
+          component: () => import('@/view/page/personal/PersonalCenter/index.vue'),
           meta: {
             title: t('route.titles.personalCenter'),
           },
@@ -114,7 +114,7 @@ export const PageRoutes: RouteRecordRaw = {
         {
           path: 'setting',
           name: 'page-personal-setting',
-          component: () => import('@/view/page/personal/personalSetting/index.vue'),
+          component: () => import('@/view/page/personal/PersonalSetting/index.vue'),
           meta: {
             title: t('route.titles.personalSetting'),
           },

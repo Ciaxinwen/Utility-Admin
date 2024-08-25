@@ -1,0 +1,1 @@
+import{n as r,ae as a,D as o,o as n,p as s}from"./.pnpm-DTVa1Nkx.js";const _=r({name:"redirect",__name:"index",setup(c){const t=a(),e=o();return t.replace({path:`/${e.params.path}`,query:e.query}),(p,u)=>(n(),s("div"))}});export{_ as default};

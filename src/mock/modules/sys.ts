@@ -51,7 +51,7 @@ const mockUserInfo: Record<Users, UserInfo> = {
 
 function getLoginResponse(reqBody: LoginParams): Response {
   const { username, password } = reqBody;
-  const userTable = [];
+  const userTable: any[] = [];
   for (const key in Tokens) {
     userTable.push({
       ...decodeToken(Tokens[key as UserType]),

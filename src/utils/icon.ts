@@ -1,12 +1,17 @@
+interface SvgIconName {
+  path: string;
+  name: string;
+}
+
 /**
  * @description: 获取项目中所有svg图标name
  * @return {*} SvgIconNames
  */
 export const getSvgNames = () => {
-  const SvgIconNames = [];
+  const SvgIconNames: SvgIconName[] = [];
   const SvgIconFiles = import.meta.glob('@/assets/svg/icon/*.svg', { eager: true });
   for (const key in SvgIconFiles) {
-    SvgIconNames.push({ path: key, name: key.split('/').at(-1)?.split('.')[0] });
+    SvgIconNames.push({ path: key, name: key.split('/').at(-1)?.split('.')[0] || '' });
   }
   return SvgIconNames;
 };

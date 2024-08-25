@@ -6,7 +6,7 @@ import type { Directive, DirectiveBinding } from 'vue';
 export const numAnim: Directive = {
   mounted(el: HTMLElement, binding: DirectiveBinding) {
     const duration = Number(binding.value[0]) || 1000;
-    const separator = binding.value[1] || ',';
+    const separator = (binding.value[1] || ',') as string;
     const rate = Number(binding.arg) || 30;
     const count = Number(el.innerText);
     let _count = 0;
@@ -19,7 +19,7 @@ export const numAnim: Directive = {
       const splitRes = num.toFixed(fixed).split('.');
       let int = splitRes[0].split('').reverse();
       const float = splitRes[1];
-      let arr = [];
+      let arr: string[] = [];
       for (let i = 0; i < int.length; i++) {
         if (!(i % 3) && i) arr.push(separator);
         arr.push(int[i]);

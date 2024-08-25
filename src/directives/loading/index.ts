@@ -1,4 +1,3 @@
-import { transformI18n } from '@/locales';
 import { Spin } from 'ant-design-vue';
 import { SpinSize } from 'ant-design-vue/es/spin/Spin';
 import { render, type Directive, type DirectiveBinding } from 'vue';

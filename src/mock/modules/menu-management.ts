@@ -1,5 +1,4 @@
 import Mock from 'mockjs';
-import { t } from '@/locales';
 import { validToken } from '../utils';
 import { Response } from '../type';
 

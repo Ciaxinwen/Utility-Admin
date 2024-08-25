@@ -9,7 +9,7 @@ import { store } from '..';
 import { Theme, Layout } from '@/enum/system';
 
 export const useConfigStore = defineStore('config', () => {
-  const { defaultAlgorithm, darkAlgorithm, compactAlgorithm } = antTheme;
+  const { defaultAlgorithm, darkAlgorithm } = antTheme;
   const config = useStorage<Configurations>(StorgeKeys.SYS_CONFIG, getDefaultConfig());
   const themtMode = useColorMode();
 
