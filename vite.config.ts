@@ -79,7 +79,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      outDir: 'Utility-Admin',
+      // outDir: '',
       rollupOptions: {
         output: {
           chunkFileNames: 'js/[name]-[hash].js', // 引入文件名的名称
