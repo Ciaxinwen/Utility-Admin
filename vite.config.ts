@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => {
   const { VITE_BASE_URL, VITE_SYSTEM_NAME } = loadEnv(mode, process.cwd());
 
   return {
-    base: './',
+    base: VITE_BASE_URL,
     plugins: [
       vue(),
       AutoImport({
@@ -79,7 +79,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      outDir: `./dist${VITE_BASE_URL}`,
+      // outDir: `./dist${VITE_BASE_URL}`,
       rollupOptions: {
         output: {
           chunkFileNames: 'js/[name]-[hash].js', // 引入文件名的名称
