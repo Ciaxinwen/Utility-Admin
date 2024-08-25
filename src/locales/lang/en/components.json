@@ -1,0 +1,43 @@
+{
+  "modal": {
+    "full": "Maximize",
+    "outFull": "Exit maximization"
+  },
+  "resizer": {
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "clockwise": "Rotate 90° clockwise",
+    "anticlockwise": "Rotate 90° counterclockwise",
+    "modalTitle": "Image cropping upload",
+    "ok": "Confirm and upload",
+    "choose": "Choose image"
+  },
+  "qrcode": {
+    "expired": "Qrcode has expired",
+    "scanned": "Scanned",
+    "reload": "Click Refresh record"
+  },
+  "upload": {
+    "desc": "Upload",
+    "check": "Select",
+    "uploading": "UPLOADING",
+    "waiting": "WAITING TO UPLOAD",
+    "error": "UPLOAD FAILED",
+    "success": "UPLOAD COMPLETE",
+    "reloadUpload": "Re-upload the failed file",
+    "startUpload": "Begin Upload",
+    "message": {
+      "size": "The size of a single file cannot exceed {maxSize}MB",
+      "noHas": "No unuploaded files exist in the list",
+      "uploading": "File is uploading, please wait...",
+      "limit": "Upload only {limit} files",
+      "format": "Support {format} file",
+      "type": "Please upload {accept} format one of the files"
+    }
+  },
+  "table": {
+    "density": "Density",
+    "columns": "Columns",
+    "reset": "Reset"
+  }
+}

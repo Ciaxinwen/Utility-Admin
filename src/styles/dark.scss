@@ -1,0 +1,10 @@
+html {
+  &.dark {
+    color: rgb(255 255 255 / 85%);
+    background-color: #000;
+
+    --page-bg-color: #000;
+    --common-bg-color: #141414;
+    --scrollbar-color: #383737;
+  }
+}

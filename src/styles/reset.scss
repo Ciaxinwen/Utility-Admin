@@ -1,0 +1,96 @@
+html {
+  --theme-color: unset;
+  --page-bg-color: #fff;
+  --common-bg-color: var(--page-bg-color);
+  --layout-header-height: 48px;
+  --layout-footer-height: 30px;
+  --layout-tab-height: 38px;
+  --layout-content-padding: 12px;
+  --scrollbar-color: #e4e4e7;
+
+  overflow: visible;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--scrollbar-color);
+  }
+
+  /* 灰色模式 */
+  .html-grey {
+    filter: grayscale(100%);
+  }
+
+  /* 色弱模式 */
+  .html-weakness {
+    filter: invert(80%);
+  }
+
+  #nprogress {
+    .bar {
+      background: var(--theme-color);
+      .peg {
+        box-shadow:
+          0 0 10px var(--theme-color),
+          0 0 5px var(--theme-color);
+      }
+    }
+
+    .spinner-icon {
+      border-top-color: var(--theme-color);
+      border-left-color: var(--theme-color);
+    }
+  }
+
+  .utility-loading-mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--common-bg-color);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .ant-layout-sider,
+  .ant-menu {
+    &-dark {
+      background-color: #000 !important;
+
+      .ant-layout-sider-trigger {
+        background-color: rgba(255, 255, 255, 0.12) !important;
+      }
+    }
+  }
+
+  .ant-btn + .ant-btn {
+    margin-left: 12px;
+  }
+
+  .ant-form.ant-form-horizontal.search-form {
+    .ant-form-item {
+      margin-bottom: unset;
+    }
+  }
+
+  .ant-select-tree-title,
+  .ant-tree-title {
+    display: inline-block;
+    padding: 3px 5px;
+  }
+
+  .ant-divider {
+    &.ant-divider-horizontal {
+      margin: 12px 0;
+    }
+  }
+}
