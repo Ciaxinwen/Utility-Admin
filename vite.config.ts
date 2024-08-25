@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => {
   const { VITE_BASE_URL, VITE_SYSTEM_NAME } = loadEnv(mode, process.cwd());
 
   return {
-    base: VITE_BASE_URL,
+    base: './',
     plugins: [
       vue(),
       AutoImport({
