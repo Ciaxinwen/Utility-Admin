@@ -18,7 +18,7 @@
 
   useAppKeydown();
 
-  console.log('测试ci/cd');
+  console.log('测试ci/cd，666666');
 </script>
 
 <style lang="scss" scoped></style>
