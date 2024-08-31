@@ -85,7 +85,7 @@
     "vue-tsc": "^2.0.6"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,vue}\" npx lint-staged"
+    "pre-commit": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,vue}\""
   },
   "lint-staged": {
     "*": "pnpm run eslint"
