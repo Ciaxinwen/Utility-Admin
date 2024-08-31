@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "stylelint": "stylelint \"src/**/*.(vue|scss|css)\" --fix",
     "eslint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "prepare": "simple-git-hooks",
     "push gitPages": "git subtree push --prefix=dist origin gh-pages"
   },
   "dependencies": {
@@ -54,6 +55,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.6.0",
+    "lint-staged": "^15.2.9",
     "mockjs": "^1.1.0",
     "postcss": "^8.4.38",
     "postcss-html": "^1.7.0",
@@ -62,6 +64,7 @@
     "rollup-plugin-visualizer": "^5.12.0",
     "sass": "^1.77.4",
     "sass-loader": "^14.2.1",
+    "simple-git-hooks": "^2.11.1",
     "stylelint": "^14.7.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^7.0.0",
@@ -80,5 +83,8 @@
     "vite-plugin-svg-icons": "^2.0.1",
     "vue-eslint-parser": "^8.3.0",
     "vue-tsc": "^2.0.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,vue}\""
   }
 }
