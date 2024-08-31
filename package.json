@@ -86,5 +86,8 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,vue}\""
+  },
+  "lint-staged": {
+    "*": "pnpm run eslint"
   }
 }
