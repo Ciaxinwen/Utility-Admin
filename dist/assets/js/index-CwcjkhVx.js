@@ -1,1 +1,0 @@
-import{d as t,u as o}from"./vue-router-CZk6BKTr.js";import{d as a,o as s,b as n}from"./@vue-D377Yz3Q.js";const d=a({name:"redirect",__name:"index",setup(u){const r=t(),e=o();return r.replace({path:`/${e.params.path}`,query:e.query}),(c,p)=>(s(),n("div"))}});export{d as default};
