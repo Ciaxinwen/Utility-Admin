@@ -9,7 +9,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "stylelint": "stylelint \"src/**/*.(vue|scss|css)\" --fix",
-    "eslint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "eslint": "eslint . --fix",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "publish-preview": "git subtree push --prefix=dist origin gh-pages"
@@ -87,13 +87,5 @@
     "vite-plugin-svg-icons": "^2.0.1",
     "vue-eslint-parser": "^8.3.0",
     "vue-tsc": "^2.0.6"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,vue}": [
-      "eslint --fix"
-    ],
-    "*.{css,scss}": [
-      "stylelint --fix"
-    ]
   }
 }
