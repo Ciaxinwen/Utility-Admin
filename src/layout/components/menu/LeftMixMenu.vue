@@ -84,6 +84,8 @@
   }
 
   .mix-menu {
+    --scrollbar-color: v-bind('config.lightSidebar?"#e4e4e7":"#383737"');
+
     &-item {
       &:hover {
         .svg-icon {

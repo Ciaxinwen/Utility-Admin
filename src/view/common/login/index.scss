@@ -1,88 +1,89 @@
 .login-bg {
   width: 100vw;
   height: 100vh;
-  background-image: radial-gradient(
-    circle at 69% 75%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 38%,
-    transparent 38%,
-    transparent 69%,
-    transparent 69%,
-    transparent 100%
-  ),
+  background-image:
     radial-gradient(
-    circle at 41% 58%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 3%,
-    transparent 3%,
-    transparent 75%,
-    transparent 75%,
-    transparent 100%
-  ),
+      circle at 69% 75%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 38%,
+      transparent 38%,
+      transparent 69%,
+      transparent 69%,
+      transparent 100%
+    ),
     radial-gradient(
-    circle at 94% 91%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 48%,
-    transparent 48%,
-    transparent 55%,
-    transparent 55%,
-    transparent 100%
-  ),
+      circle at 41% 58%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 3%,
+      transparent 3%,
+      transparent 75%,
+      transparent 75%,
+      transparent 100%
+    ),
     radial-gradient(
-    circle at 68% 38%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 34%,
-    transparent 34%,
-    transparent 36%,
-    transparent 36%,
-    transparent 100%
-  ),
+      circle at 94% 91%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 48%,
+      transparent 48%,
+      transparent 55%,
+      transparent 55%,
+      transparent 100%
+    ),
     radial-gradient(
-    circle at 81% 20%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 40%,
-    transparent 40%,
-    transparent 61%,
-    transparent 61%,
-    transparent 100%
-  ),
+      circle at 68% 38%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 34%,
+      transparent 34%,
+      transparent 36%,
+      transparent 36%,
+      transparent 100%
+    ),
     radial-gradient(
-    circle at 46% 37%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 37%,
-    transparent 37%,
-    transparent 76%,
-    transparent 76%,
-    transparent 100%
-  ),
+      circle at 81% 20%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 40%,
+      transparent 40%,
+      transparent 61%,
+      transparent 61%,
+      transparent 100%
+    ),
     radial-gradient(
-    circle at 49% 5%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 43%,
-    transparent 43%,
-    transparent 67%,
-    transparent 67%,
-    transparent 100%
-  ),
+      circle at 46% 37%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 37%,
+      transparent 37%,
+      transparent 76%,
+      transparent 76%,
+      transparent 100%
+    ),
     radial-gradient(
-    circle at 18% 58%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 4%,
-    transparent 4%,
-    transparent 20%,
-    transparent 20%,
-    transparent 100%
-  ),
+      circle at 49% 5%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 43%,
+      transparent 43%,
+      transparent 67%,
+      transparent 67%,
+      transparent 100%
+    ),
     radial-gradient(
-    circle at 43% 68%,
-    hsla(65, 0%, 95%, 0.05) 0%,
-    hsla(65, 0%, 95%, 0.05) 10%,
-    transparent 10%,
-    transparent 36%,
-    transparent 36%,
-    transparent 100%
-  ),
-    linear-gradient(135deg, rgb(84, 115, 232), rgb(177, 150, 255));
+      circle at 18% 58%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 4%,
+      transparent 4%,
+      transparent 20%,
+      transparent 20%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 43% 68%,
+      hsl(65deg 0% 95% / 5%) 0%,
+      hsl(65deg 0% 95% / 5%) 10%,
+      transparent 10%,
+      transparent 36%,
+      transparent 36%,
+      transparent 100%
+    ),
+    linear-gradient(135deg, rgb(84 115 232), rgb(177 150 255));
 }
 
 .anim-into {

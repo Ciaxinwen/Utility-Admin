@@ -62,7 +62,6 @@
 </style>
 <style lang="scss" scoped>
   .ellipsis {
-    /* stylelint-disable-next-line value-no-vendor-prefix */
     display: -webkit-inline-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: v-bind('line');

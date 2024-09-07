@@ -129,7 +129,7 @@ $layout-tab-content-height: calc(var(--layout-tab-height) - 6px);
 
 .card-mode {
   &.ant-tabs {
-    padding: 3px 10px 0px 0;
+    padding: 3px 10px 0 0;
 
     :deep(.ant-tabs-nav) {
       &::before {

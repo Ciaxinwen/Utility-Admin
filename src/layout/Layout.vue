@@ -117,7 +117,10 @@
   .ant-layout-sider {
     z-index: 11;
     height: 100%;
-    box-shadow: 2px 0 3px #eeeeee;
+
+    &:not(&-dark) {
+      box-shadow: 2px 0 3px #eeeeee;
+    }
   }
 
   .layout-tabs {

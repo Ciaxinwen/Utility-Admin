@@ -2,7 +2,7 @@
   <div class="flex flex-col gap-4">
     <ThemeSelector />
     <SwitchItem
-      :disabled="config.theme === Theme.DARK"
+      :disabled="config.theme === Theme.DARK || config.layoutMode === Layout.TOP"
       v-model="config.lightSidebar"
       :label="$t('common.config.UIDisplay.lightSidebar')"
     />
@@ -30,7 +30,7 @@
 <script lang="ts" setup>
   import { storeToRefs } from 'pinia';
   import { useConfigStore } from '@/store/module/config.ts';
-  import { Theme } from '@/enum/system';
+  import { Theme, Layout } from '@/enum/system';
   import ThemeSelector from './ThemeSelector.vue';
   import ThemeColor from './ThemeColor.vue';
   import SwitchItem from './SwitchItem.vue';

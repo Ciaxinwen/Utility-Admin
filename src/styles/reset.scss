@@ -1,6 +1,6 @@
 html {
   --theme-color: unset;
-  --page-bg-color: #fff;
+  --page-bg-color: #ffffff;
   --common-bg-color: var(--page-bg-color);
   --layout-header-height: 48px;
   --layout-footer-height: 30px;
@@ -49,25 +49,29 @@ html {
 
   .utility-loading-mask {
     position: absolute;
-    left: 0;
-    right: 0;
     top: 0;
+    right: 0;
     bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--common-bg-color);
     opacity: 0.8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
   }
 
   .ant-layout-sider,
   .ant-menu {
     &-dark {
-      background-color: #000 !important;
+      background-color: #000000 !important;
 
       .ant-layout-sider-trigger {
-        background-color: rgba(255, 255, 255, 0.12) !important;
+        background-color: rgb(255 255 255 / 12%) !important;
+      }
+
+      .ant-menu.ant-menu-sub {
+        background-color: rgb(255 255 255 / 8%) !important;
       }
     }
   }

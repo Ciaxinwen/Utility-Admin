@@ -5,7 +5,7 @@
       !config.isMixMenuFixed && 'pos-absolute top-0 ',
       config.isSiderCollapsed ? 'left-56px' : 'left-80px',
       visible || config.isMixMenuFixed ? 'w-230px' : 'w-0',
-      !config.lightSidebar && 'bg-#001529',
+      !config.lightSidebar && 'bg-#0f0f0f',
     ]"
     @mouseleave="handleMouseLeave"
   >
@@ -93,6 +93,10 @@
   html.dark {
     .mix-menu-drawer {
       box-shadow: 1px 0 2px #0c0c0c;
+
+      &-header {
+        border-bottom: 2px solid #0c0c0c;
+      }
     }
   }
 
@@ -100,7 +104,7 @@
     box-shadow: 2px 0 3px #eeeeee;
 
     &-header {
-      border-bottom: 2px solid #f7f7f7;
+      border-bottom: 2px solid v-bind('config.lightSidebar?"#f7f7f7":"#0c0c0c"');
     }
   }
 
