@@ -10,7 +10,13 @@
     "preview": "vite preview",
     "eslint": "eslint . --fix",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "cz": "czg"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
@@ -52,6 +58,8 @@
     "@typescript-eslint/parser": "^5.20.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "cz-git": "^1.9.4",
+    "czg": "^1.9.4",
     "eslint": "^8.13.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
