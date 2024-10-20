@@ -27,6 +27,8 @@
     "ellipsis": "文本省略",
     "fullscreen": "全屏",
     "print": "打印",
+    "ai": "AI智能助手",
+    "spark": "讯飞星火模型",
     "download": "文件下载",
     "retrying": "请求重试",
     "loginExpiration": "登录过期",

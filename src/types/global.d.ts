@@ -17,6 +17,10 @@ declare global {
     readonly VITE_GLOB_UPLOAD_URL: string;
     readonly VITE_BASE_URL: string;
     readonly VITE_ROUTER_MODE: RouterHistoryMode;
+    readonly VITE_SPARK_APISECRET: stirng;
+    readonly VITE_SPARK_APIKEY: stirng;
+    readonly VITE_SPARK_APIID: stirng;
+    readonly VITE_SPARK_CHAT_DOMAIN: stirng;
   }
 
   export interface Configurations {

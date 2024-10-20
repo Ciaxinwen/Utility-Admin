@@ -41,5 +41,24 @@ export const FuncRoutes: RouteRecordRaw = {
         title: t('route.titles.print'),
       },
     },
+
+    {
+      path: 'ai',
+      name: 'ai',
+      redirect: { name: 'spark' },
+      meta: {
+        title: t('route.titles.ai'),
+      },
+      children: [
+        {
+          path: 'spark',
+          name: 'spark',
+          meta: {
+            title: t('route.titles.spark'),
+          },
+          component: () => import('@/view/func/ai/Spark.vue'),
+        },
+      ],
+    },
   ],
 };
